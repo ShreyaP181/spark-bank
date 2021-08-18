@@ -11,5 +11,5 @@ Database: MySql
 
 FLOW: Home page>view customers>select and view oe customer>Traansfer money>select customer to transfer to > view all customers.
 
-Website : banksparks.epizy.com
+Website :http://banksparks.epizy.com/index.php
 
