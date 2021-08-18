@@ -1,0 +1,179 @@
+:root {
+    --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+    --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+    --skin-color: #ec718e;
+    --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+}
+
+html::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    margin: 30px;
+    border: 1px solid;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    border-radius: 40px;
+    color: white;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+ul li a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.inner-shadow {
+    box-shadow: var(--inner-shadow);
+}
+
+.outer-shadow {
+    box-shadow: var(--outer-shadow);
+}
+
+.hover-in-shadow {
+    position: relative;
+    z-index: 1;
+}
+
+.hover-in-shadow:hover {
+    box-shadow: var(--outer-shadow-0);
+}
+
+.hover-in-shadow::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.hover-in-shadow:hover::after {
+    box-shadow: var(--inner-shadow);
+}
+
+.menu ul li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--skin-color);
+    background-color: transparent;
+    line-height: 1.5;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+}
+
+a::after {
+    border-radius: 30px;
+}
+
+.mainSection {
+    margin: 30px auto;
+    width: 50%;
+    border: 1px solid;
+    background-color: #59d2d4;
+    border-radius: 25px;
+}
+
+.mainSection h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 15px auto;
+}
+
+form {
+    width: 86%;
+    padding: 50px;
+    margin: 50px auto;
+    border: 1px dashed black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.form-field {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 200px;
+}
+
+.table {
+    margin: auto;
+}
+
+.table tbody {
+    display: inline-table;
+    background-color: white;
+}
+
+.table tbody td {
+    margin: 15px;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 18px;
+    border: 2px solid grey;
+    margin: 14px auto;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #59d2d4;
+    /* color: white; */
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 5px 5px 10px grey;
+    transition: 0.5s;
+}

@@ -1,0 +1,109 @@
+.navbar {
+    height: 100px;
+    justify-content: space-around;
+    flex-direction: column;
+    position: sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-customer {
+    height: 190px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+ul li a {
+    font-size: 13px;
+    padding: 5px 7px;
+    /* margin: 3px; */
+    /* display: inline-block; */
+}
+
+.img {
+    /* height: 300px; */
+    align-items: center;
+}
+
+.home {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.home h1 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.service {
+    flex-direction: column;
+    width: 100%;
+}
+
+div.card_content {
+    margin: 30px auto;
+    border: 2px solid black;
+    width: 88%;
+    text-align: center;
+    height: 230px;
+    border-radius: 28px;
+    /* align-items: center; */
+}
+
+.main-table {
+    min-width: 0px;
+}
+
+.main-table thead tr th:nth-child(3) {
+    display: none;
+    /* width: 40px; */
+}
+
+.main-table tbody tr td:nth-child(3) {
+    display: none;
+}
+
+.header1 {
+    font-size: 30px;
+}
+
+.table {
+    margin: 2px;
+}
+
+.mainSection {
+    width: 94%;
+}
+
+form {
+    /* width: 80%; */
+    padding: 10px;
+    /* margin: 30px; */
+    border: solid 2px;
+    border-radius: 15px;
+}
+
+.form-field {
+    text-align: left;
+    align-items: left;
+    border: none;
+    padding: 2px;
+    width: 80%;
+    font-size: 14px;
+}
+
+.table tbody td {
+    margin: 5px;
+    padding: 10px;
+}
+
+.input {
+    padding: 5px;
+}
+
+footer {
+    font-size: 12px;
+    padding:3px;
+}
